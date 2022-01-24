@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #100e17 !important;/*#211f25 !important; */
+    color: white !important;
+}
+
+pre{
+    padding: 0 20px;
+    color: white !important;
+}  
+
+nav{
+    /* position: fixed; */
+    /* margin: 0 300px; */
+    /* border-radius: 10px; */
+    z-index: 1;
+}
+#article{
+    width: 90% !important;
+    padding: 5rem;
+    margin: 50px 30px !important;
+    overflow-x: auto;
+    background-color: #1d1825 !important;
+    z-index: 3;
+    min-height: 50vh;
+}
+#article h2{
+    color: #ff8a00;
+    font-weight: bold;
+}
+
+.article {
+    background: #100e17;
+    min-height: 100vh;
+    padding: 5rem;
+    font-size: 21px;
+}
+.article .article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.article h1 {
+    font-size: 5rem;
+}
+.article h2,
+.article h1,
+.article h3 {
+    font-weight: bold;
+}
+.article h2 {
+    margin: 3rem 0 3rem 0;
+}
+.article hr {
+    background-color: #F27121 !important;
+}
+.article img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    margin: 3rem 0;
+}
+
+.bg-green{
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+}
+
+blockquote {
+  font: 22px normal helvetica, sans-serif;
+  margin-top: 50px !important;
+  margin-bottom: 10px !important;
+  margin-left: 50px !important;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+
+.btn-own{
+    background: linear-gradient(to top left,#ff8a00,#e52e71) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-family: Josefin Slab;
+    transition: .5s all;
+}
+.btn-own:hover{
+    background: linear-gradient(to left,#ff8a00,#e52e71) !important;
+}
+.btn-search{
+    border: solid 1px #e84393 !important;
+}
+.bg-contain{
+    background: #100e17;
+}
+.caption {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center; 
+    /* transform: translate(-50%, 550%); */
+}
+.caption span.border {
+    border: 1px solid #ff8a00 !important;
+    color: #ff8a00;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+.categories li a, 
+.categories-title{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.categories-title:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.code{
+    background: #232526;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    height: 600px;
+    width: 100%;
+}
+.content{
+    width: 100%;
+    padding: 90px 30px;
+    /* padding: 20px; */
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content-list li a{
+    color: #e52e71;
+}
+.contact-icon{
+    font-size: 5vw;
+    margin: 10px;
+    transition: .5s all;
+}
+.contact-icon:hover{
+    font-size: 10vw;
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+    background: #1f2124;
+}
+
+.flat-image{
+    display: flex;
+    background: linear-gradient( -45deg, #f5f6fa, #f5f6fa 49%, #dcdde1 49%, #dcdde1 51%, #dcdde1 51% );
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    border-radius: 150px;
+    height: 200px;
+    width: 200px;
+    box-shadow:20px 20px 50px 15px #1f2124;
+}
+.flatimage{
+    width: 150px;
+    height: 150px;
+    transition: .5s all;
+}
+.flatimage:hover{
+    width: 200px;
+    height: 200px;
+}
+.gist {
+    width:500px !important;
+}
+.gist .blob-code-inner{
+    font-size: 10px !important;
+}
+.gist-file .gist-data {
+    max-height: 500px;
+    max-width: 500px;
+}
+.hidden-left{
+    opacity: 0;
+    margin-left: 100% !important;
+}
+
+.hidden-right{
+    opacity: 0;
+    margin-right: 100% !important;
+}
+/* .img-content{
+    height: 20rem;
+    width: 20rem;
+} */
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -3;
+}
+.pointer{
+    text-align: center;
+    padding: 20px;
+}
+.read-more{
+    display: block;
+}
+.search {
+    width: 135px;
+    color: #ffffff;
+    margin: 20px;
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: #e84393 1px solid;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}  
+.search:focus {
+    width: 50%;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    box-shadow: 20px 20px 50px 15px #1f2124;
+}
+.section h1{
+    font-size: 10vw;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.shadow-own{
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.315) !important;
+}
+.album{
+    /* overflow-y: visible; */
+    display: flex;
+}
+.contain{
+    /* overflow-y: visible; */
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow-x: scroll;
+}
+.card{
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.596) !important;
+    height: 30rem;
+    width: 23rem !important; 
+    border-radius: 20px !important;
+}
+.card:not(:first-child){
+    margin-left: -4rem !important;
+}
+.card:hover:not(:first-child){
+    transform: translate(-2rem, -2rem);
+    transition: .5s all;
+}
+
+.card:first-child{
+    text-align: center;
+    writing-mode: vertical-lr;
+    width: 5rem !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nyamping{
+    font-size: 50px; 
+}
+
+.title-article{
+    margin-top: -2rem;
+    max-width: 100% !important;
+    z-index: -1;
+}
+.txt-img{
+    font-family: Josefin Slab;
+}
+.txt-title{
+    font-family: Raleway;
+    color: #e52e71;
+}
+/* .title-text{
+    text-transform: uppercase;
+    font-weigth: 300;    
+} */
+
+.wrapper-flat{
+    display: flex;
+    align-items:center;
+    margin: 20px;
+}
+
+.whoami{
+    width:10rem;
+    height:10rem
+}
+
+@media screen and (max-width: 800px){
+    .article {
+        padding: 1rem;
+        font-size: 18px;
+    }
+    .article h1 {
+        font-size: 3rem;
+    }
+    #article{
+        padding: 2rem;
+    }
+    .back-to-up {
+        /*margin-top: 85%;*/
+    }
+    .card{
+        width: 13rem !important;
+        height: 23rem !important;
+    }
+    .card:first-child{
+        width: 13rem !important;
+    }
+    .flatimage{
+        width: 70px;
+        height: 70px;
+    }
+    .flatimage:hover{
+        width: 100px;
+        height: 100px;
+    }
+    .flat-image{
+        height: 100px;
+        width: 100px;
+    }
+    .whoami{
+        height: 7rem;
+        width : 7rem;
+    }
+}

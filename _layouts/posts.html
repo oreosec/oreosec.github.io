@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+	<title>{{ page.title }} | {{ site.url }}</title>
+	<meta name="generator" content="Jekyll v4.2.0" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta property="og:description" content="{{ page.description }}" />
+	<link rel="canonical" href="/" />
+	<meta property="og:url" content="/" />
+	<meta property="og:page_name" content="{{ page.title }}" />
+	<meta name="twitter:card" content="summary" />
+	<meta property="twitter:title" content="{{ page.title }}" />
+	<script type="application/ld+json">
+	{"description":"{{ page.description }}","@type":"Webpage","headline":"{{ page.title }}","url":"{{ page.url }}","name":"{{ page.title }}","@context":"https://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
+	<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ page.title }}" />
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/font/Alfa-slab/alfaslab.css">
+	<link rel="stylesheet" href="/assets/font/Raleway/Raleway.css">
+	<link rel="stylesheet" href="/assets/font/josefin-slab/josefin-slab.css">
+	<link rel="icon" type="image/png" href="/assets/img/oreosec.png"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="/assets/css/highlight.css" rel="stylesheet" />
+	<script src="/assets/font/fontawesome-free-5.0.2/svg-with-js/js/fontawesome-all.min.js"></script>
+</head>
+<body>
+	<div  id="particles-js"></div>
+		{% include head.html %}
+		<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top" style="position: fixed;opacity: .5;transition: .5s all">
+  			<i class="fas fa-arrow-up"></i>
+		</button>
+		<div class="article">
+			<div class="article-header">
+				<span class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.dates }} </span>
+				<h1 class="title text-center">{{ page.title }}</h1>
+				<span class="text-muted">by</span><span class="font-weight-bold">  -  {{ page.author }}</span>
+			</div>
+				{{ page.content }}	
+		</div>
+</body>
+<footer class="copyright">made with &hearts; by oreosec &copy;2020</footer> 
+<script>//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/particles.min.js"></script>
+<script src="/assets/js/app.js"></script>
+</html>

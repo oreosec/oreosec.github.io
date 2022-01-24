@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+	<title>{{ page.title }} | {{ page.description }}</title>
+	<meta name="generator" content="Jekyll v4.2.0" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta property="og:description" content="{{ page.description }}" />
+	<link rel="canonical" href="/" />
+	<meta property="og:url" content="/" />
+	<meta property="og:page_name" content="{{ page.title }}" />
+	<meta name="twitter:card" content="summary" />
+	<meta property="twitter:title" content="{{ page.title }}" />
+	<script type="application/ld+json">
+	{"description":"{{ page.description }}","@type":"Webpage","headline":"{{ page.title }}","url":"{{ page.url }}","name":"{{ page.title }}","@context":"https://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
+	<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ page.title }}" />
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/font/Alfa-slab/alfaslab.css">
+	<link rel="stylesheet" href="/assets/font/Raleway/Raleway.css">
+	<link rel="stylesheet" href="/assets/font/josefin-slab/josefin-slab.css">
+	<link rel="icon" type="image/png" href="/assets/img/oreosec.png"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="/assets/font/fontawesome-free-5.0.2/svg-with-js/js/fontawesome-all.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/post.css">
+
+</head>
+<body>
+	<div  id="particles-js"></div>
+	{% include head.html %}
+	<div class="container">
+
+	<!-- 	<input id="search" type="text" class="search" name="search" placeholder="Search title.."> 
+		<input type="submit" class="btn btn-search text-light" value="search" onclick="search()">
+	-->
+	<div class="contain">
+		<div class="album py-5 bg-transparent" id="album">
+			<div class="mb-4 col-sm tag card" style="background:linear-gradient(#ff8a00,#e52e71);">
+				<strong class="nyamping">HackTheBox</strong>
+			</div>
+			{% for post in site.posts %}
+			{% if post.tag == "hackthebox" %}
+			<div class="card mb-4 col-sm" style="background:#16131c" id="$id$">
+				<div class="card-body">
+					<strong>{{ post.title }}</strong>
+					<p class="card-text text-muted">
+
+					</p>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+							<a href="{{ post.url }}" type="button" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+						</div>
+						<!-- <small class="text-muted">9 mins</small> -->
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+<!--
+<h1 class="font-weight-bold">All Category Index</h1>
+<ul class="tag-box inline categories">
+{% assign tags_list = site.categories %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %}
+    {% if tag != "private" %}
+      <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+    {% endif %}
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %}
+    {% if tag[0] != "private" %}
+      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    {% endif %}
+    {% endfor %}
+  {% endif %}
+{% assign tags_list = nil %}
+</ul>
+
+{% for tag in site.categories %}
+{% if tag[0] != "private" %}
+  <h2 id="{{ tag[0] }}" class="font-weight-bold">{{ tag[0] | capitalize }}</h2>
+{% endif %}
+  <ul class="post-list px-5">
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list  %}
+      {% if post.title != null %}
+      {% if post.private != true %}
+
+      {% if group == null or group == post.group %}
+      <li><a href="{{ site.url }}{{ post.url }}" class="categories-title">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+      {% endif %}
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </ul>
+
+{% endfor %}
+-->
+</div>
+<div class="copyright">made with &hearts; by oreosec &copy;2020</div> 
+</body>
+<!-- <script src="..//assets/js/bootstrap.min.js"></script> -->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/particles.min.js"></script>
+<script src="/assets/js/app.js"></script>
+</html>
