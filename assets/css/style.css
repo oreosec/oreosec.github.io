@@ -40,8 +40,8 @@ nav{
 .article {
     background: #100e17;
     min-height: 100vh;
-    padding: 5rem;
-    font-size: 21px;
+    padding: 13rem;
+    font-size: 18px;
 }
 .article .article-header {
     text-align: center;
